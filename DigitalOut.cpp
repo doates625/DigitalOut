@@ -29,7 +29,7 @@ void DigitalOut::write(int value)
 }
 
 /**
- * @param Reads state of digital output (0 or 1)
+ * @brief Reads state of digital output (0 or 1)
  */
 int DigitalOut::read()
 {
@@ -37,13 +37,13 @@ int DigitalOut::read()
 }
 
 /**
- * @param Returns true if object is connected to output
+ * @brief Returns 1 if object is connected to output
  * 
- * Note: For Arduino, this always returns true.
+ * Note: For Arduino, this always returns 1.
  */
-int is_connected()
+int DigitalOut::is_connected()
 {
-	return true;
+	return 1;
 }
 
 /**
