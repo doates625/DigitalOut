@@ -53,6 +53,7 @@ int DigitalOut::is_connected()
 DigitalOut& DigitalOut::operator=(int value)
 {
 	write(value);
+	return *this;
 }
 
 /**
