@@ -11,7 +11,7 @@
  * @param pin Platform-specific pin ID
  * @param value Initial output value (0 or 1)
  */
-DigitalOut::DigitalOut(PLATFORM_PIN_TYPE pin, int value)
+DigitalOut::DigitalOut(Platform::pintype_t pin, int value)
 {
 	this->pin = pin;
 	pinMode(pin, OUTPUT);
