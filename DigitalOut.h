@@ -23,14 +23,14 @@
 class DigitalOut
 {
 public:
-	DigitalOut(Platform::pintype_t pin, int value = 0);
+	DigitalOut(Platform::pin_t pin, int value = 0);
 	void write(int value);
 	int read();
 	int is_connected();
 	DigitalOut& operator=(int value);
 	operator int();
 protected:
-	Platform::pintype_t pin;
+	Platform::pin_t pin;
 	int value;
 };
 
